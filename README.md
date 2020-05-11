@@ -1,2 +1,9 @@
 # Computational_Environments_Fortune
-project log for unit final project
+## Fiona
+Project log for unit final project
+
+Project proposal: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Web%20Fortune.pptx
+
+Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
+
+Progress:
