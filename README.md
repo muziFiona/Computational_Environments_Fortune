@@ -6,7 +6,7 @@ Project proposal: https://github.com/muziFiona/Computational_Environments_Fortun
 
 Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
 
-Progress:
+### Progress:
 ### 11-17 May
 
 Processing using WEBGL
@@ -24,3 +24,6 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 -create array of boxes to interact with mouse (3D boxes, could rotate through camera space)
 
 -when one of the boxes is pressed, disappear and show next step
+
+
+[Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
