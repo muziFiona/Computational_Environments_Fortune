@@ -38,6 +38,7 @@ z move: -width ->width -> -width
 x,z, xspeed, zspeed
 
 x = x + xspeed
+
 z = z + zspeed
 
 if > / < width, *-1
