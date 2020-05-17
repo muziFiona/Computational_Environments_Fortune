@@ -22,4 +22,5 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 ### AIM
 
 -create array of boxes to interact with mouse (3D boxes, could rotate through camera space)
+
 -when one of the boxes is pressed, disappear and show next step
