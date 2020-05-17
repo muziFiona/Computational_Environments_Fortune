@@ -7,3 +7,10 @@ Project proposal: https://github.com/muziFiona/Computational_Environments_Fortun
 Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
 
 Progress:
+### 11-17 May
+
+Processing using WEBGL
+
+concept structure:
+
+![Concept Structure](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-17%2019-41-47.gif)
