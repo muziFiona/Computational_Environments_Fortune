@@ -29,5 +29,17 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 
 -when one of the boxes is pressed, disappear and show next step
 
+Blocks rotating concept:
+
+moving x and z at the same time with 25 blocks. 
+x move: 0 -> width -> 0
+z move: -width ->width -> -width
+
+x,z, xspeed, zspeed
+
+x = x + xspeed
+z = z + zspeed
+
+if > / < width, *-1
 
 [Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
