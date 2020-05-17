@@ -32,7 +32,9 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 Blocks rotating concept:
 
 moving x and z at the same time with 25 blocks. 
+
 x move: 0 -> width -> 0
+
 z move: -width ->width -> -width
 
 x,z, xspeed, zspeed
