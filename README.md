@@ -45,4 +45,7 @@ z = z + zspeed
 
 if > / < width, *-1
 
+There should be 25 blocks distribute all around x and z axis in a circle formate. And should use array[] to create the boxes
+
+
 [Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
