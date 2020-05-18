@@ -23,6 +23,8 @@ WEBGL cheat sheet( simon tiger)By : https://gist.github.com/simon-tiger/06e865e3
 
 Was thinking about using Easy Cam, however, most of the example can't run locally. Why not look into WebGL when this is the built in function. 
 
+![Concept Structure](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-18%2001-09-15_1.gif)
+
 ### AIM
 
 -create array of boxes to interact with mouse (3D boxes, could rotate through camera space)
