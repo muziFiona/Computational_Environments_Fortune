@@ -7,6 +7,10 @@ Project proposal: https://github.com/muziFiona/Computational_Environments_Fortun
 Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
 
 ### Progress:
+processing Github view site (will keep updating):
+
+https://muzifiona.github.io/Computational_Environments_Fortune/fortune/ 
+
 ### 11-17 May
 
 Processing using WEBGL
@@ -24,6 +28,24 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 -create array of boxes to interact with mouse (3D boxes, could rotate through camera space)
 
 -when one of the boxes is pressed, disappear and show next step
+
+Blocks rotating concept:
+
+moving x and z at the same time with 25 blocks. 
+
+x move: 0 -> width -> 0
+
+z move: -width ->width -> -width
+
+x,z, xspeed, zspeed
+
+x = x + xspeed
+
+z = z + zspeed
+
+if > / < width, *-1
+
+There should be 25 blocks distribute all around x and z axis in a circle formate. And should use array[] to create the boxes
 
 
 [Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
