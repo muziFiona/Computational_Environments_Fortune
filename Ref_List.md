@@ -12,4 +12,4 @@ https://p5js.org/libraries/ (P5 js library)
 
 https://processing.org/tutorials/p3d/
 
-[mouseDragged](https://p5js.org/reference/#/p5/mouseDragged)  
+[mouseDragged](https://p5js.org/reference/#/p5/mouseDragged)  [Lights](https://p5js.org/examples/3d-multiple-lights.html)
