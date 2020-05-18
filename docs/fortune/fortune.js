@@ -19,5 +19,11 @@ function draw() {
   //ambientMaterial(0,0,255);
   boxT();
   
+  //RUNE();
   
+}
+
+function mouseDragged(){
+  let camX = map(mouseX, 0, width, -400, 400);
+  camera(camX,0,(height/2)/tan(PI/6),0,0,0,0,1,0);
 }
