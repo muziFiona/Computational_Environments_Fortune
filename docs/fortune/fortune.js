@@ -14,10 +14,10 @@ function setup() {
 function draw() {
   //ambientLight(255);
   background(bg);
-  
   mousePt();
   //ambientMaterial(0,0,255);
   boxT();
+  
   
   //RUNE();
   
