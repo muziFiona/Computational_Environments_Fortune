@@ -49,5 +49,15 @@ if > / < width, *-1
 
 There should be 25 blocks distribute all around x and z axis in a circle formate. And should use array[] to create the boxes
 
+### 18-24 May
+Finding the best way for distributing array objects. 
+
+ref links:
+https://codepen.io/enginarslan/pen/aJJmZP
+https://processing.org/tutorials/text/
+https://p5js.org/examples/objects-array-of-objects.html
+http://learningprocessing.com/exercises/chp13/exercise-13-05-spiral
+
+
 
 [Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
