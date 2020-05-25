@@ -54,8 +54,11 @@ Finding the best way for distributing array objects.
 
 ref links:
 https://codepen.io/enginarslan/pen/aJJmZP
+
 https://processing.org/tutorials/text/
+
 https://p5js.org/examples/objects-array-of-objects.html
+
 http://learningprocessing.com/exercises/chp13/exercise-13-05-spiral
 
 
