@@ -49,8 +49,17 @@ if > / < width, *-1
 
 There should be 25 blocks distribute all around x and z axis in a circle formate. And should use array[] to create the boxes
 
-### 18-24 May
+### 18-31 May
 Finding the best way for distributing array objects. 
+
+https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-30%2020-27-28.gif
+
+main changes:
+
+![rotation animation](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-30%2020-27-28.gif)
+
+*Y rotation
+*using array on x and z axis for positioning
 
 ref links:
 https://codepen.io/enginarslan/pen/aJJmZP
