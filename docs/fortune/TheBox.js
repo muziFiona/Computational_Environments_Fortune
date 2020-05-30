@@ -1,4 +1,5 @@
 
+
 let size = 30;
 function boxT(){
   
@@ -8,36 +9,30 @@ function boxT(){
   
   pointLight(8, 251, 0, width/2, -height/2, 100);
   
-
-  for( var i = -width; i< width; i+= 150){
-    
-    
-    push();
-  //map(width, 0,width, -200,200);
   
-  translate(i,0,i);
+  for( var i = 0; i< 26; i++){
+    let offset =0;
+    push();
+    translate(x[i],0,z[i]);
+    
+    rotateY(angle);
+    
+    stroke(255);
+    strokeWeight(2);
+    fill(255);
+    box(size,200,size);
+    
+    pop();
+    offset += 0.1;
+    //z += 30;
+  }
+  
+  angle += 0.005;
  
   
-  rotateY(angle);
-  
-  stroke(255);
-  strokeWeight(2);
-  fill(255);
-  box(size,200,size);
-  pop();
-  }
-  angle += 0.003;
-  
   //pop();
-  push();
-  noStroke();
-  ambientMaterial(200,111,255,255);
-  translate(0,200,100);
-  rotateX(PI/2);
-  plane(width,height);
-  pop();
-  
 
+  
   
   if (mouseX >= width/2-10 && mouseX <= width/2+10 /*&& mouseY >= height/2 -10 && mouseY <= height/2 +10*/){
     
