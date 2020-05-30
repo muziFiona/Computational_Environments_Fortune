@@ -1,5 +1,3 @@
-// so far this is the sphere that goes with mouse and controling directional light
-
 function mousePt(){
   let dx = mouseX - width/2;
   let dy = mouseY - height/2;
@@ -21,4 +19,13 @@ function mousePt(){
   pop();
   
   angle += 0.03;
+}
+
+function dotPt(){
+  let large =0;
+  push();
+  fill(255);
+  noStroke();
+  ellipse(mouseX-width/2, mouseY-height/2,large+(sin(frameCount/30)*20));
+  pop();
 }
