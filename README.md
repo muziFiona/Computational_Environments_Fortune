@@ -58,8 +58,10 @@ main changes:
 
 ![rotation animation](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-30%2020-27-28.gif)
 
-*Y rotation
-*using array on x and z axis for positioning
+* Y rotation
+* using array on x and z axis for positioning
+* next: only the middle box would interact with mouse, and enlarge its size and clickable
+* next: with text appeal when mouseclick
 
 ref links:
 https://codepen.io/enginarslan/pen/aJJmZP
