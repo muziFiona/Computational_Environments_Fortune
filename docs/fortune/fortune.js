@@ -1,8 +1,11 @@
 let angle = 0;
+let degree = 0;
+
 var x = [];
 var z = [];
 
-let bg = 50;
+
+let bg = 0;
 //let size;
 
 
@@ -10,8 +13,8 @@ function setup() {
  createCanvas(windowWidth, windowHeight, WEBGL);
  //frameRate(30);
   for (var i=0; i<25; i++){
-    x[i] = 240 * cos(24*radians(i));
-    z[i] =  240 * sin(24*radians(i));
+    x[i] = 600 * cos(14.5*radians(i));
+    z[i] =  600 * sin(14.5*radians(i));
   }
 }
 
@@ -23,16 +26,8 @@ function draw() {
   //ambientMaterial(0,0,255);
   dotPt();
   push();
-  rotateY(angle);
+  //rotateY(angle);
   boxT();
-  pop();
-  
-  push();
-  noStroke();
-  ambientMaterial(200,111,255,255);
-  translate(0,200,100);
-  rotateX(PI/2);
-  plane(width,height);
   pop();
   
   //RUNE();
