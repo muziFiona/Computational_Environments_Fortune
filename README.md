@@ -63,6 +63,8 @@ main changes:
 * next: only the middle box would interact with mouse, and enlarge its size and clickable
 * next: with text appeal when mouseclick
 
+* need to get atart with interaction (result, the answer for the mouse response)
+
 ref links:
 https://codepen.io/enginarslan/pen/aJJmZP
 
