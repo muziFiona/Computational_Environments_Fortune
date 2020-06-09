@@ -8,8 +8,17 @@ var button;
 let bg = 0;
 let myFont;
 //let size;
+
+let img;
+let runesImg=[];
+let rI;
 function preload(){
   myFont = loadFont('assests/Montserrat-Medium.ttf');
+  //img = loadImage('assests/img/Rune1.png');
+  for (let r =1; r<26; r++){
+    runesImg[r]= loadImage("assests/img/Rune"+ r +".png");
+  }
+  
 }
 function setup() {
  createCanvas(windowWidth, windowHeight, WEBGL);
@@ -18,8 +27,8 @@ function setup() {
     x[i] = 600 * cos(14.5*radians(i));
     z[i] =  600 * sin(14.5*radians(i));
   }
-  
 
+  rI= runesImg[25];
   //button = createButton('welcome');
  // background(bg);
  //button.mousePressed(boxT);
@@ -70,11 +79,14 @@ function draw() {
   //runeStone.mousePressed(bg = 0);
   pop();
   //RUNE();
+  
+  
+
 
 }
 
 //function mouseDragged(){
-//  let camX = map(mouseX, 0, width, -400, 400);
+//  let camX = map(mouseX, 0, width, -400, 100);
 //  camera(camX,0,(height/2)/tan(PI/6),0,0,0,0,1,0);
   
 //  fill (255);
@@ -82,3 +94,9 @@ function draw() {
 //  text("runes[index]", width/2,height/2);
   
 //}
+
+//let images=[];
+//images[0]="";
+
+//lerp(rune[]
+//map(images[],0,runes[]
