@@ -73,11 +73,11 @@ main changes:
 * Problem with the mouse press function. Even the animation loop is added, when mouse is pressed, the function won't continuously show until you click again. In fact, the loop would just pop for the moment you click it. 
 * Also, I need to map the images that refer to the specific runes for show features. 
 
-![answer with image](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/fortune-function.png)
+![answer with image](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/fortune-function2.png)
 
 * 25 images have been added to match the specific rune to give visions to the users. (using if function, there should be a better way to do so instead of typing 25 times of if and else if function, this should be considered when basic features are done.
 * Next is to fix the animation problem. 
-*Aim:
+* Aim:
 * on = !on every time the user press the middle, animation start fading in and show the answer, and you press again to fade out
 * consider the look of blocks that are rotating. My friend has suggest me that it might look better to be a 3D model with stars at the back to build up the mysterious features. Which should be consider after the first aim is achieved. 
 
