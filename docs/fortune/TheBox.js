@@ -32,12 +32,12 @@ function boxT(){
     translate(x[i],0,z[i]);
     
     rotateY(angle);
-    
-    stroke(0);
+    //noStroke();
+    stroke(111);
     strokeWeight(2);
     fill(255,100);
     //ambientMaterial(200,111,255,255);
-    box(size,200,size);
+    box(size,200,size/2);
     
     pop();
     offset += 0.1;
@@ -53,25 +53,30 @@ function boxT(){
 
   
   op = 0;
+  
+  
   if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
     degree = 0;
     
      size=80;
      bg = 10;
-     
+
      if (mouseIsPressed){
         bg= 30;
         noStroke();
         fill(255, 255, 255, 100);
         rectMode(CENTER);
+        texture(rI);
         rect(mouseX-width/2, mouseY-height/2, 450,300);
+        
+        //image(rI,mouseX-width/1.65, mouseY-height/1.65, 500, 350, 0);
+ 
         LETTERS();
         //if (millis() <10000){
-          for (var n= 0; n<10; n++){
-          angle +=0.005; 
-          //degree +=0.01;
-          }
-          
+          //for (var n= 0; n<10; n++){
+          //angle +=0.005; 
+          ////degree +=0.01;
+          //}
           
         //} 
       } 
@@ -83,4 +88,3 @@ function boxT(){
   } 
   
 }
-
