@@ -18,9 +18,9 @@ rotateX(PI/2);
     strokeWeight(1);
     fill(255,100);
     //ambientMaterial(200,111,255,255);
-    //box(size,200,size/2);
-    scale(size);
-    model(runeM);
+    box(size*15,200,15*size/2);
+    //scale(size);
+    //model(runeM);
     
     pop();
     offset += 0.1;
