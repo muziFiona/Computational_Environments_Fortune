@@ -1,16 +1,8 @@
-
-let runes = [];
 let index ;
-function mousePressed(){
-  //fill (255);
-  //textSize(32);
-  //text("runes[index]", width/2,height/2);
-  index = floor(random(runes.length));
-  
-}
+let runes = [];
 
 function LETTERS(){
-  fill(10, 0, 0, 255);
+  fill(10, 0, 0, op);
   textFont(myFont);
   textSize(32);
   textAlign(LEFT,TOP);
