@@ -1,27 +1,8 @@
-
-let size = 30;
-var runeStone = boxT();
-var fade ;
-var fadeAmount = 1;
-var op;
-var opAmount = 1;
-
-function boxT(){
-  
-  //frameRate(10);
-  
-  //pointLight(109, 189, 235, -width/2, height/2 -100, -10);
-  
-  //pointLight(8, 251, 0, width/2, -height/2, 100);
-  
-  push();
-  noStroke();
-  //ambientMaterial(200,111,255,255);
-  fill(255,100);
-  translate(0,200,100);
-  rotateX(PI/2);
+rotateX(PI/2);
   //plane(width,height);
+  rotateZ(angle);
   circle(0,0,width);
+  
   pop();
   
   
@@ -33,11 +14,13 @@ function boxT(){
     
     rotateY(angle);
     //noStroke();
-    stroke(111);
-    strokeWeight(2);
+    stroke(50,150);
+    strokeWeight(1);
     fill(255,100);
     //ambientMaterial(200,111,255,255);
-    box(size,200,size/2);
+    //box(size,200,size/2);
+    scale(size);
+    model(runeM);
     
     pop();
     offset += 0.1;
@@ -55,36 +38,6 @@ function boxT(){
   op = 0;
   
   
-  if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
-    degree = 0;
-    
-     size=80;
-     bg = 10;
 
-     if (mouseIsPressed){
-        bg= 30;
-        noStroke();
-        fill(255, 255, 255, 100);
-        rectMode(CENTER);
-        texture(rI);
-        rect(mouseX-width/2, mouseY-height/2, 450,300);
-        
-        //image(rI,mouseX-width/1.65, mouseY-height/1.65, 500, 350, 0);
- 
-        LETTERS();
-        //if (millis() <10000){
-          //for (var n= 0; n<10; n++){
-          //angle +=0.005; 
-          ////degree +=0.01;
-          //}
-          
-        //} 
-      } 
-     
-     }else {
-    size = 30;
-    bg= 0;
-    
-  } 
   
 }
