@@ -1,5 +1,6 @@
-let index ;
 let runes = [];
+let index ;
+
 
 function LETTERS(){
   fill(10, 0, 0, op);
