@@ -9,7 +9,7 @@ function preload(){
   for (let r =1; r<26; r++){
     runesImg[r]= loadImage("assests/img/Rune"+ r +".png");
   }
-  runeM = loadModel('assests/single_rune.obj',true);
+  //runeM = loadModel('assests/single_rune.obj',true);
   img = loadImage('assests/bottom_BG.png');
 }
 function setup() {
