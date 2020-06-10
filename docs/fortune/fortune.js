@@ -1,31 +1,23 @@
-let angle = 0;
-let degree = 0;
+let on=false;
+var op;
+var opspeed =1;
+let runeM;
 
-var x = [];
-var z = [];
-var button;
-
-let bg = 0;
-let myFont;
-//let size;
-
-let img;
-let runesImg=[];
-let rI;
 function preload(){
   myFont = loadFont('assests/Montserrat-Medium.ttf');
-  //img = loadImage('assests/img/Rune1.png');
+
   for (let r =1; r<26; r++){
     runesImg[r]= loadImage("assests/img/Rune"+ r +".png");
   }
-  
+  runeM = loadModel('assests/single_rune.obj',true);
+  img = loadImage('assests/bottom_BG.png');
 }
 function setup() {
  createCanvas(windowWidth, windowHeight, WEBGL);
  //frameRate(30);
   for (var i=0; i<25; i++){
-    x[i] = 600 * cos(14.5*radians(i));
-    z[i] =  600 * sin(14.5*radians(i));
+    x[i] = 800 * cos(14.5*radians(i));
+    z[i] =  800 * sin(14.5*radians(i));
   }
 
   rI= runesImg[25];
@@ -33,6 +25,7 @@ function setup() {
  // background(bg);
  //button.mousePressed(boxT);
   rectCol=0;
+  op =0;
 
   runes[0]="FEHU \nGain \nHappiness";
   runes[1]="URUZ \nYou need \nStrong Will";
@@ -67,7 +60,7 @@ function draw() {
   //ambientLight(255);
   //button.mousePressed(boxT);
   background(bg);
-  orbitControl();
+ // orbitControl();
   
   //mousePt();
   //ambientMaterial(0,0,255);
@@ -79,24 +72,91 @@ function draw() {
   //runeStone.mousePressed(bg = 0);
   pop();
   //RUNE();
+  let w =new answers(0,0,0);
   
   
+  
+if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
+    degree = 0;
+    
+    size= 1.8;
+    bg = 30;
+    op=255;
+    
 
+     if (on){
+        bg= 30;
+        //answers.push(w);
+        answer();
+      if (op>=0){
+      opspeed =5;
+      op += opspeed;
+      }
+     } 
+      
+    }
+     
+   else {
+    size = 1.2;
+    bg= 0;
+    if(op > 0){
+    opspeed=-10;
+    op += opspeed;
+     } 
+    } 
+    
+    for (var i = 0; i< 1000; i++){
+
+      noStroke();
+      fill(255, random(0,150));
+      ellipse(random(-width,width), random(-height,height), random(1,5));
+    }
 
 }
 
-//function mouseDragged(){
-//  let camX = map(mouseX, 0, width, -400, 100);
-//  camera(camX,0,(height/2)/tan(PI/6),0,0,0,0,1,0);
+function mouseDragged(){
+  let camX = map(mouseX, 0, width, -400, 100);
+  camera(camX,0,(height/2)/tan(PI/6),0,0,0,0,1,0);
   
-//  fill (255);
-//  textSize(32);
-//  text("runes[index]", width/2,height/2);
+}
+function mousePressed(){
+
+  index = floor(random(runes.length));
   
-//}
+  if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
 
-//let images=[];
-//images[0]="";
+    on = !on;
+    
+  }
+  
+}
 
-//lerp(rune[]
-//map(images[],0,runes[]
+  class answers{
+    move(){
+        push();
+        tint(255, op);
+        translate(-100, -100, 0);
+        image(rI, 0, 0);
+        pop();
+        
+        noStroke();
+        fill(255,255,255, op/2);
+        rectMode(CENTER);
+        translate(0, 0, 0);
+        rect(mouseX-width/2, mouseY-height/2, 450,300);
+        LETTERS();
+      }
+  }
+  function  answer(){
+        push();
+        tint(255, op);
+        translate(-100, -100, 0);
+        image(rI, 0, 0);
+        pop();
+        
+        noStroke();
+        fill(255,255,255, op/2);
+        rectMode(CENTER);
+        translate(0, 0, 0);
+        rect(mouseX-width/2, mouseY-height/2, 450,300);
+        LETTERS();}
