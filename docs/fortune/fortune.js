@@ -1,7 +1,21 @@
+let angle = 0;
+let degree = 0;
+
+var x = [];
+var z = [];
+var button;
+
+let bg = 0;
+let myFont;
+//let size;
+
+let img;
+let runesImg=[];
+let rI;
 let on=false;
 var op;
 var opspeed =1;
-let runeM;
+//let runeM;
 
 function preload(){
   myFont = loadFont('assests/Montserrat-Medium.ttf');
@@ -61,32 +75,25 @@ function draw() {
   //button.mousePressed(boxT);
   background(bg);
  // orbitControl();
-  
-  //mousePt();
-  //ambientMaterial(0,0,255);
+
   dotPt();
   push();
-  //rotateY(angle);
-  
   boxT();
-  //runeStone.mousePressed(bg = 0);
   pop();
   //RUNE();
-  let w =new answers(0,0,0);
+
   
-  
-  
-if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
+  if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
     degree = 0;
     
-    size= 1.8;
+    size= 50;
     bg = 30;
     op=255;
     
 
      if (on){
         bg= 30;
-        //answers.push(w);
+
         answer();
       if (op>=0){
       opspeed =5;
@@ -97,7 +104,7 @@ if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mo
     }
      
    else {
-    size = 1.2;
+    size = 30;
     bg= 0;
     if(op > 0){
     opspeed=-10;
@@ -131,8 +138,7 @@ function mousePressed(){
   
 }
 
-  class answers{
-    move(){
+  function  answer(){
         push();
         tint(255, op);
         translate(-100, -100, 0);
@@ -146,17 +152,3 @@ function mousePressed(){
         rect(mouseX-width/2, mouseY-height/2, 450,300);
         LETTERS();
       }
-  }
-  function  answer(){
-        push();
-        tint(255, op);
-        translate(-100, -100, 0);
-        image(rI, 0, 0);
-        pop();
-        
-        noStroke();
-        fill(255,255,255, op/2);
-        rectMode(CENTER);
-        translate(0, 0, 0);
-        rect(mouseX-width/2, mouseY-height/2, 450,300);
-        LETTERS();}
