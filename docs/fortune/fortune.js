@@ -14,8 +14,12 @@ let runesImg=[];
 let rI;
 let on=false;
 var op;
+var opp;
 var opspeed =1;
-//let runeM;
+let runeM;
+var s= 0.5;
+
+let can;
 
 function preload(){
   myFont = loadFont('assests/Montserrat-Medium.ttf');
@@ -23,12 +27,14 @@ function preload(){
   for (let r =1; r<26; r++){
     runesImg[r]= loadImage("assests/img/Rune"+ r +".png");
   }
-  //runeM = loadModel('assests/single_rune.obj',true);
+  runeM = loadModel('assests/single_rune.obj',true);
   img = loadImage('assests/bottom_BG.png');
 }
 function setup() {
- createCanvas(windowWidth, windowHeight, WEBGL);
+ can=createCanvas(windowWidth, windowHeight, WEBGL);
+ //can.mouseOver(backgorundC);
  //frameRate(30);
+ lo = 255;
   for (var i=0; i<25; i++){
     x[i] = 800 * cos(14.5*radians(i));
     z[i] =  800 * sin(14.5*radians(i));
@@ -40,6 +46,7 @@ function setup() {
  //button.mousePressed(boxT);
   rectCol=0;
   op =0;
+  opp= 0;
 
   runes[0]="FEHU \nGain \nHappiness";
   runes[1]="URUZ \nYou need \nStrong Will";
@@ -71,48 +78,37 @@ function setup() {
 
 
 function draw() {
-  //ambientLight(255);
-  //button.mousePressed(boxT);
   background(bg);
- // orbitControl();
 
   dotPt();
+  middleR();
   push();
+  
   boxT();
   pop();
   //RUNE();
-
-  
-  if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
+  //textImg();
+  if (mouseX >= width/2-100 && mouseX <= width/2+100 && mouseY >= height/2 && mouseY <= height){
     degree = 0;
     
     size= 50;
     bg = 30;
-    op=255;
+    s= sin(frameCount/100);
+    lo = 200;
     
-
-     if (on){
-        bg= 30;
-
-        answer();
-      if (op>=0){
-      opspeed =5;
-      op += opspeed;
-      }
-     } 
-      
+    answer();
+     
     }
      
    else {
     size = 30;
     bg= 0;
-    if(op > 0){
-    opspeed=-10;
-    op += opspeed;
-     } 
+    s=0.85;
+    lo = 255;
+ 
     } 
     
-    for (var i = 0; i< 1000; i++){
+    for (var i = 0; i< 500; i++){
 
       noStroke();
       fill(255, random(0,150));
@@ -130,25 +126,37 @@ function mousePressed(){
 
   index = floor(random(runes.length));
   
-  if (mouseX >= width/2-10 && mouseX <= width/2+10 && mouseY >= height/2 -30 && mouseY <= height/2 +30){
-
-    on = !on;
-    
-  }
-  
+  if (mouseX >= width/2-100 && mouseX <= width/2+100 && mouseY >= height/2 && mouseY <= height){
+    on = !on; 
+  } 
 }
 
   function  answer(){
-        push();
-        tint(255, op);
-        translate(-100, -100, 0);
-        image(rI, 0, 0);
-        pop();
         
         noStroke();
-        fill(255,255,255, op/2);
+        fill(255,255,255, op);
         rectMode(CENTER);
-        translate(0, 0, 0);
-        rect(mouseX-width/2, mouseY-height/2, 450,300);
+        translate(0, -100, 0);
+        rect(0, height/8, 600,400);
+        
+        fill(0,0,0,0);
+        translate(0, -50, 0);
+        tint(255, op);
+        texture(rI);
+        rect(30, height/8, 450,300);  
+        translate(0, height/8, 100);
+
+        if (on){
+        bg= 30; // background
         LETTERS();
+        if (op < 200){
+          op += 10;
+        }
+
+     } else {
+     if (op >0){
+     op += -20;
+    }
+     }
       }
+      
