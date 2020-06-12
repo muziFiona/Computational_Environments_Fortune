@@ -4,6 +4,9 @@ var fade ;
 var fadeAmount = 1;
 var op;
 var opAmount = 1;
+var lo;
+var from = 0;
+var to = 255;
 
 function boxT(){
   
@@ -29,11 +32,11 @@ function boxT(){
     
     rotateY(angle);
     //noStroke();
-    stroke(10,200);
-    strokeWeight(2);
+    stroke('rgb(20,20,20,0.5)');
+    strokeWeight(4);
     fill(255,100);
     //ambientMaterial(200,111,255,255);
-    box(size,200,size/2);
+    box(size,200,size);
     //scale(size);
     //model(runeM);
     
@@ -45,7 +48,24 @@ function boxT(){
   angle += 0.005;
   degree += 0.005;
 
-  op = 0;
+  //op = 0;
 
+  
+}
+
+function middleR(){
+  push();
+  translate(0,height/8,0);
+  rotateY(angle);
+  //stroke(20);
+  scale(s);
+  //fill(255,100);
+  directionalLight(150, 150, 150, width/2,-1500, -500);
+  ambientLight(88, 88, 88,10);
+  //ambientMaterial(200,111,255,255);
+  specularMaterial(100, 100, 100,lo);
+
+  model(runeM);
+  pop();
   
 }
