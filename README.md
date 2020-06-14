@@ -1,15 +1,16 @@
 # Computational_Environments_Fortune
+## fortune 2.0
 ## Fiona
-Project log for unit final project
+### Project log for unit final project
 
 Project proposal: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Web%20Fortune.pptx
 
 Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
 
 ### Progress:
-processing Github view site (will keep updating):
+Github view site (will keep updating):
 
-https://muzifiona.github.io/Computational_Environments_Fortune/fortune/ 
+https://muzifiona.github.io/fortune2.0/
 
 ### 11-17 May
 
@@ -80,6 +81,14 @@ main changes:
 * Aim:
 * on = !on every time the user press the middle, animation start fading in and show the answer, and you press again to fade out
 * consider the look of blocks that are rotating. My friend has suggest me that it might look better to be a 3D model with stars at the back to build up the mysterious features. Which should be consider after the first aim is achieved. 
+
+#### 3D model for Mark's project visuals
+
+![runes 3D model](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-06-06%20222029.jpg)
+
+### Update for final function
+
+![final visual presentation](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-06-14%20193227.jpg)
 
 ref links:
 https://codepen.io/enginarslan/pen/aJJmZP
