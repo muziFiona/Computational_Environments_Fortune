@@ -18,7 +18,7 @@ function  answer(){
         
         //switching on and off for the text output and also adding the fade in fade out effect
         if (on){
-        bg= 30; // background
+        //bg= 30; // background
         LETTERS();
         if (op < 200){
           op += 3;
