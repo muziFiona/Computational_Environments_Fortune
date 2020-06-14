@@ -8,9 +8,14 @@ Project proposal: https://github.com/muziFiona/Computational_Environments_Fortun
 Design Document: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Design%20Document-Fiona.pdf
 
 ### Progress:
-Github view site (will keep updating):
 
+Github view site (will keep updating):
 https://muzifiona.github.io/fortune2.0/
+
+### Display operation
+
+youtube!!
+
 
 ### 11-17 May
 
@@ -90,7 +95,14 @@ main changes:
 
 ![final visual presentation](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-06-14%20193227.jpg)
 
+* Fading in and fading out function solved by rearranging part of codes to reconstruct the code order 
+* Using if() to create the animation transformation
+* As previous conversation with tutor, the need of action for users might not be that obvious as I have set the function would only be responsive when the mouse is right at the center of the page. Which is hard for player to find out the actual middle point of the page to play with the fortune telling. 
+* Hence I have load a 3D model of rune to place at the center that should be more obvious for people to click on it and receive response. 
+
+
 ref links:
+
 https://codepen.io/enginarslan/pen/aJJmZP
 
 https://processing.org/tutorials/text/
@@ -100,5 +112,4 @@ https://p5js.org/examples/objects-array-of-objects.html
 http://learningprocessing.com/exercises/chp13/exercise-13-05-spiral
 
 
-
-[Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md)
+[Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md) References and tutorial that I have looked at during project. 
