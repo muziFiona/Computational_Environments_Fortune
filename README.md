@@ -31,6 +31,8 @@ Was thinking about using Easy Cam, however, most of the example can't run locall
 
 ![Concept Structure](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-05-18%2001-09-15_1.gif)
 
+Lighting and material above won't appear in the end of project, this is for try out and obvious to see. The final view will be black and white.
+
 ### AIM
 
 -create array of boxes to interact with mouse (3D boxes, could rotate through camera space)
@@ -103,7 +105,7 @@ main changes:
 ### Further Development
 * So far the boxes array response together when mouse is at a specific position, which can be improved by being responsive to every single spinning box and only the selected one will change the size. 
 * improving the background or adding background music. 
-* In my initial design, there should be opening animation and 2 mode for user to choose. I was not able to add in these features as I spended most of the time to figure out positioning the array model, working with boolean and placing my broken code in the right position to make it works. With the base structure built this time, my design could be achieved in future. 
+* In my initial design, there should be opening animation and 2 mode for user to choose. I was not able to add in these features as I spent most of the time to figure out positioning the array model, working with boolean and placing my broken code in the right position to make it works. With the base structure built this time, my design could be achieved in future. 
 
 
 ref links:
