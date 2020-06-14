@@ -1,6 +1,11 @@
 # Computational_Environments_Fortune
 ## fortune 2.0
 ## Fiona
+
+Introduction
+>Online fortune experience with RUNEs the ancient Germanic languages that represent the power from gods in Viking Age.
+>Using WEBGL to build a 3D environment to present a mystical ancient language that allows user to play with and receive messages from it. 
+>Press the 3D model in middle and receive answer. 
 ### Project log for unit final project
 
 Project proposal: https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Web%20Fortune.pptx
