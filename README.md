@@ -98,6 +98,10 @@ main changes:
 
 ![runes 3D model](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-06-06%20222029.jpg)
 
+#### Bottom image
+![image pattern](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/bottom_BG.png)
+* instead of using plain white circle as a base for the environment, I have changed to an image I drawn emphasise the mystery feeling and make the page more like the wheel of destiny.
+
 ### Update for final function
 
 ![final visual presentation](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Media/2020-06-14%20193227.jpg)
