@@ -14,7 +14,7 @@ https://muzifiona.github.io/fortune2.0/
 
 ### Display operation
 
-youtube!!
+https://youtu.be/_EAPXlY35Pg 
 
 
 ### 11-17 May
@@ -100,6 +100,11 @@ main changes:
 * As previous conversation with tutor, the need of action for users might not be that obvious as I have set the function would only be responsive when the mouse is right at the center of the page. Which is hard for player to find out the actual middle point of the page to play with the fortune telling. 
 * Hence I have load a 3D model of rune to place at the center that should be more obvious for people to click on it and receive response. 
 
+### Further Development
+* So far the boxes array response together when mouse is at a specific position, which can be improved by being responsive to every single spinning box and only the selected one will change the size. 
+* improving the background or adding background music. 
+* In my initial design, there should be opening animation and 2 mode for user to choose. I was not able to add in these features as I spended most of the time to figure out positioning the array model, working with boolean and placing my broken code in the right position to make it works. With the base structure built this time, my design could be achieved in future. 
+
 
 ref links:
 
@@ -112,4 +117,4 @@ https://p5js.org/examples/objects-array-of-objects.html
 http://learningprocessing.com/exercises/chp13/exercise-13-05-spiral
 
 
-[Useful links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md) References and tutorial that I have looked at during project. 
+[Reference links](https://github.com/muziFiona/Computational_Environments_Fortune/blob/master/Ref_List.md) References and tutorial that I have looked at during project. 
