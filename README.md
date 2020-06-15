@@ -116,6 +116,10 @@ main changes:
 * improving the background or adding background music. 
 * In my initial design, there should be opening animation and 2 mode for user to choose. I was not able to add in these features as I spent most of the time to figure out positioning the array model, working with boolean and placing my broken code in the right position to make it works. With the base structure built this time, my design could be achieved in future. 
 
+### Feedback received (in class presentation that also consider for further development)
+* the spinning boxes could also be responsive which may activate some sound or changing size to make the page more interactive
+* the image at the bottom could be improved with pixel features in p5js
+
 
 ref links:
 
